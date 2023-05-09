@@ -1,0 +1,201 @@
+class Company: 
+    def __init__(self, name, location, services, title):
+        self.name = name
+        self.location = location
+        self.services = services
+        self.title = title
+        
+    def display(self):
+        print(self.name)
+        print(self.location)
+        print(self.services)
+        print(self.title)
+
+company1 = Company("abc", "multan", "gardening services", "manager")
+company2 = Company("bdf", "lahore", "landscaping services", "ceo")
+company3 = Company("xyz", "karachi", "pool maintenance services", "sho")
+
+services_list = [company1, company2, company3]
+for service in services_list:
+    service.display()
+    
+class Lawn:
+    def __init__(self, size, quality):
+        self.size = size
+        self.quality = quality
+    
+    def display(self):
+        print(self.size)
+        print(self.quality)
+        
+lawn1 = Lawn("Large", "High-quality")
+lawn2 = Lawn("small", "low quality")
+lawn3 = Lawn("medium", "medium quality")
+
+lawn_list = [lawn1, lawn2, lawn3]
+for lawn in lawn_list:
+    lawn.display()
+    
+        
+class Garden:
+    def __init__(self, design, landscaping, features):
+        self.design = design
+        self.landscaping = landscaping
+        self.features = features
+    
+    def display(self):
+        print(self.design)
+        print(self.landscaping)
+        print(self.features)
+        
+garden1 = Garden("cantt garden", "Professional landscaping", "Water features")
+garden2 = Garden("multan garden", "local landscaping", "health feature")
+garden3 = Garden("lahore garden", "modern landscaping", "mind fresh features")
+
+garden_list = [garden1, garden2, garden3]
+for garden in garden_list:
+    garden.display()        
+
+         
+class Pool:
+    def __init__(self, size, design, features):
+        self.size = size
+        self.design = design
+        self.features = features
+    
+    def display(self):
+        print(self.size)
+        print(self.design)
+        print(self.features)
+        
+pool1 = Pool("small-size", "local", "Hot tub1")
+pool2 = Pool("medium-size", "outclass", "Hot tub2")
+pool3 = Pool("large-size", "amazing", "Hot tub3")
+
+pool_list = [pool1, pool2, pool3]
+for pool in pool_list:
+    pool.display()
+    
+class Spa:
+    def __init__(self, spa_type, design, features):
+        self.spa_type = spa_type
+        self.design = design
+        self.features = features
+    
+    def display(self):
+        print(self.spa_type)
+        print(self.design)
+        print(self.features)
+
+spa1 = Spa("a", "local", "f")
+spa2 = Spa("b", "outstanding", "g")
+spa3 = Spa("c", "amazing", "h")
+         
+spa_list = [spa1, spa2, spa3]
+for spa in spa_list:
+    spa.display()
+           
+class Cafe:
+    def __init__(self, seating_arrangements, tv, coffee, comfortarea):
+        self.seating_arrangements = seating_arrangements
+        self.tv = tv
+        self.coffee = coffee
+        self.comfortarea = comfortarea
+    
+    def display(self):
+        print(self.tv)
+        print(self.coffee)
+        print(self.comfortarea)
+
+Cafe1 = Cafe("Outdoor seating", "Flat-screen TV", "a", "h")
+Cafe2 = Cafe("indoor seating", "cubic-screen TV", "b", "g")
+Cafe3 = Cafe("both seating", "as usual-screen TV", "c", "k")
+         
+Cafe_list = [Cafe1, Cafe2, Cafe3]
+for cafe in Cafe_list:
+    cafe.display()
+
+class Landscaping:
+    def __init__(self, design, plant_selection, features, cost):
+        self.design = design
+        self.plant_selection = plant_selection
+        self.features = features
+        self.cost = cost 
+    
+    def display(self):
+        print(self.design)
+        print(self.plant_selection)
+        print(self.features)
+        print(self.cost)
+        
+Landscaping1 = Landscaping("Modern design", "1", "indoor lighting", "5000")
+Landscaping2 = Landscaping("old design", "2", "Outdoor lighting", "5000")
+Landscaping3 = Landscaping("amazing design", "3", "both lighting", "5000")
+         
+Landscaping_list = [Landscaping1, Landscaping2, Landscaping3]
+for landscaping in Landscaping_list:
+    landscaping.display()       
+
+class brbqrea:
+    def __init__(self, size, design, features, cost):
+        self.size = size
+        self.design = design
+        self.features = features
+        self.cost = cost  
+    
+    def display(self):
+        print(self.size)
+        print(self.design)
+        print(self.features)
+        print(self.cost)
+        
+         
+brbqrea1 = brbqrea("small", "Custom design", "1", "5000")
+brbqrea2 = brbqrea("Medium", "local", "2", "5000")
+brbqrea3 = brbqrea("large", "amazing design", "3", "6000")
+         
+brbqrea_list = [brbqrea1, brbqrea2, brbqrea3]
+for bbq in brbqrea_list:
+    bbq.display()
+
+class Shed:        
+    def __init__(self, size, design, features, cost):
+        self.size = size
+        self.design = design
+        self.features = features
+        self.cost = cost 
+    
+    def display(self):
+        print(self.size)
+        print(self.design)
+        print(self.features)
+        print(self.cost)    
+
+Shed1 = Shed("Small", "Wooden design", "for storage place", "2000")
+Shed2 = Shed("medium", "metal design", "for waiting place", "3000")
+Shed3 = Shed("large", "plastic design", "storeroom", "4000")
+         
+Shed_list = [Shed1, Shed2, Shed3]
+for shed in Shed_list:
+    shed.display()
+
+class Planting:
+    def __init__(self, plant_type, arrangement, maintenance, cost):
+        self.plant_type = plant_type
+        self.arrangement = arrangement
+        self.maintenance = maintenance
+        self.cost = cost   
+    
+    def display(self):
+        print(self.plant_type)
+        print(self.arrangement)
+        print(self.maintenance)
+        print(self.cost)
+
+Planting1 = Planting("Flowers", "modern arrangement", "monthly maintenance", "5000")
+Planting2 = Planting("Vegetable", "local arrangement", "daily maintenance", "6000")
+Planting3 = Planting("Plant", "outstandard arrangement", "weekly maintenance", "7000")
+         
+Planting_list = [Planting1, Planting2, Planting3]
+for Planting in Planting_list:
+     Planting.display()
