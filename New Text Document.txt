@@ -1,0 +1,95 @@
+#include<iostream>
+using namespace std;
+int main(){
+int f;
+cout<<"$$$$$$ Manue $$$$$$"<<endl;	
+cout<<".1 for creation array"<<endl;	
+cout<<".2 for searching array"<<endl;	
+cout<<".3 for travers  array"<<endl;
+cout<<".4 for inserting array"<<endl;
+cout<<".5 for deleting  array"<<endl;
+cout<<"$$$$$$ Manue $$$$$$"<<endl;
+int a,n,p,v,size;
+
+while(true){
+ cout<<"enter a choice"<<endl;	
+	cin>>f;
+	switch(f){
+	 case 1:{
+	 cout<<"enter a size of array"<<endl;	
+	 	cin>>n;
+	 int arr[n];
+	 cout<<"enter array element "<<endl;
+	 for(int i=0; i<n; i++){
+	 	cin>>arr[i];
+	 } for(int i=0; i<n; i++){
+	 	cout<<"your array are "<<" "<<arr[i]<<endl;
+	 }	
+		break;
+	 }
+	 case 2:{
+	 	
+	 	
+	 	
+		break;
+	 }
+	 case 3:{
+	int arr[100] ={10,20,30,401};
+	
+	for (int i=0; i<4; i++){
+	cout<<" "<<arr[i]<<endl;
+	}
+	 	
+		break;
+	 }
+	 case 4:{
+	int n; int pos,val,size;
+	cout<<"enter a size of array"<<endl;
+	cin>>n;
+	int arr[n];
+		cout<<"inter array element"<<endl;
+	for(int i=0;i<n;i++){
+	 cin>>arr[i];	
+	}
+		for(int i=0; i<n;i++){
+		cout<<"array "<<arr[i]<<endl;
+	}
+    cout<<"position to change element ";
+    cin>>pos;
+    cout<<"enter a new value";
+    cin>>val;
+    for(int i=size; i>=pos; i--){
+    	arr[i]=arr[i-1];
+	}
+	size++;
+	arr[pos-1]=val;
+	
+	for(int i=0; i<n;i++){
+		cout<<"new array"<<arr[i]<<endl;	
+	}	
+		break;
+	 }
+	 case 5:{
+	 	int a[n], n, pos, i, count = 0;
+   cout << "Enter the size of an array "<<endl;
+   cin  >> n;
+   cout << "Enter the value in an array"<<endl;
+   for (i = 0; i < size; i++) {
+    cin >> a[i];
+   } 
+   cout << "Enter the position "<<endl;
+   cin  >> pos;
+   for(i = pos-1; i < size; i++) {
+      a[i] = a[i+1];
+   }
+   size--;            
+  for(i = 0; i < size; i++) {
+   
+    cout<<"   "<<a[i];
+    
+		break;
+	 }
+	}	
+}
+return 0;
+}}
